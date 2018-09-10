@@ -81,7 +81,7 @@ if [ -f "$BUILD_DIR/texlive.packages" ]; then
 fi
 
 build-step "Updating installed packages..."
-tlmgr update --all
+tlmgr update --all --exclude dehypht
 
 build-step "Cleaning up temporary files..."
 # Make sure the cache is empty
