@@ -81,7 +81,7 @@ if [ -f "$BUILD_DIR/texlive.packages" ]; then
 fi
 
 build-step "Updating installed packages..."
-#tlmgr update --all --exclude dehyph,hyphen-german
+tlmgr update --all --exclude hyphen-german
 
 build-step "Cleaning up temporary files..."
 # Make sure the cache is empty
